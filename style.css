@@ -1,0 +1,267 @@
+/* =========================================================
+   STYLE.CSS - Gabungan dari Modul 3A, 3B, 4B, 5B
+   Web Programming 1
+   ========================================================= */
+
+/* ---------- Modul 3A: Dasar Body ---------- */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222222;
+}
+
+/* ---------- Modul 3A: Header & Footer ---------- */
+header {
+    background-color: #2677da;
+    padding: 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+header h1 {
+    margin: 0;
+}
+
+footer {
+    background-color: #dbe7f6;
+    padding: 16px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+/* ---------- Modul 3A: Navigation Bar (top nav) ---------- */
+nav {
+    background-color: #ffffff;
+    padding: 14px;
+    border-bottom: 1px solid #cccccc;
+    text-align: center;
+}
+
+nav a {
+    color: #1f4e79;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Modul 3A: Main & Section ---------- */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 24px auto;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 18px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+/* ---------- Modul 3A: Foto & Tabel Biodata ---------- */
+img {
+    max-width: 160px;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #eef3f8;
+}
+
+/* ---------- Modul 3A: Layout Sidebar Kiri/Kanan (layout.php) ---------- */
+.page-layout {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 24px auto;
+    align-items: flex-start;
+}
+
+.side-nav {
+    width: 220px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    text-align: left;
+    padding: 8px 0;
+}
+
+.side-nav a {
+    display: block;
+    padding: 10px 14px;
+    margin: 0;
+}
+
+.page-layout main {
+    flex: 1;
+    width: auto;
+    margin: 0;
+}
+
+/* Tambahkan class="page-layout right" pada <div> untuk memindahkan sidebar ke kanan */
+.page-layout.right {
+    flex-direction: row-reverse;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+/* ---------- Modul 3B / 4B: Tabel Data Mahasiswa (data-table) ---------- */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    background-color: white;
+}
+
+.data-table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.data-table th,
+.data-table td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #eeeeee;
+}
+
+.data-table tbody tr:hover {
+    background-color: #f7f7f7;
+}
+
+/* ---------- Modul 4B: Form Tambah Mahasiswa (Box Model) ---------- */
+.student-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 24px auto;
+    padding: 24px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+
+.student-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.student-form input {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    border: 1px solid #aaaaaa;
+    box-sizing: border-box;
+}
+
+.student-form button {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid #333333;
+    cursor: pointer;
+    background-color: #dbe7f6;
+}
+
+.student-form button:hover {
+    background-color: #c3d8f0;
+}
+
+/* ---------- Modul 5B: Halaman Login ---------- */
+.auth-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 32px;
+    border: 1px solid #d1d5db;
+    border-radius: 16px;
+    background: #ffffff;
+}
+
+.login-card h1 {
+    margin-top: 0;
+}
+
+.form-group { margin-bottom: 18px; }
+
+.login-card label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 12px 16px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #1f4e79;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.login-card button:hover {
+    background-color: #163a5c;
+}
+
+/* ---------- Pesan sukses / error (dipakai di 4B dan 5B) ---------- */
+.message {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #eaf6ea;
+}
+
+.message.error {
+    background-color: #fdecea;
+    border-color: #f5c2c0;
+    color: #8a1f1f;
+}
