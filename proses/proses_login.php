@@ -1,9 +1,9 @@
 <?php
 session_start();
-require_once "koneksi.php";
+require_once "../config/koneksi.php";
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-    header("Location: login.php");
+    header("Location: ../pages/login.php");
     exit;
 }
 
@@ -25,10 +25,10 @@ if ($user && password_verify($password, $user["password_hash"])) {
     $_SESSION["user_id"] = $user["id"];
     $_SESSION["username"] = $user["username"];
     $_SESSION["nama_lengkap"] = $user["nama_lengkap"];
-    header("Location: dashboard.php");
+    header("Location: ../pages/dashboard.php");
     exit;
 }
 
-header("Location: login.php?error=1");
+header("Location: ../pages/login.php?error=1");
 exit;
 ?>

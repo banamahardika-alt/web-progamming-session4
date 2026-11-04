@@ -1,6 +1,6 @@
 <?php
-require_once "auth.php";
-require_once "koneksi.php";
+require_once "../config/auth.php";
+require_once "../config/koneksi.php";
 
 $sql = "SELECT id, nim, nama, program_studi, email
         FROM mahasiswa
@@ -14,7 +14,7 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Mahasiswa</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
@@ -29,7 +29,8 @@ $result = $conn->query($sql);
     <a href="layout.php">Layout Lab</a>
     <a href="data_mahasiswa.php">Data Mahasiswa</a>
     <a href="form_mahasiswa.php">Tambah Mahasiswa</a>
-    <a href="logout.php">Logout</a>
+    <a href="../crud/index.php">CRUD Mahasiswa</a>
+    <a href="../proses/logout.php">Logout</a>
 </nav>
 
 <main>

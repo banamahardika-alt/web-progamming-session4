@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Web Programming 1</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 <main class="auth-page">
@@ -20,7 +20,7 @@
             <p class="message">Anda sudah logout.</p>
         <?php endif; ?>
 
-        <form action="proses_login.php" method="POST">
+        <form action="../proses/proses_login.php" method="POST">
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required autocomplete="username">

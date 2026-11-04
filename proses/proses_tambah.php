@@ -1,9 +1,9 @@
 <?php
-require_once "auth.php";
-require_once "koneksi.php";
+require_once "../config/auth.php";
+require_once "../config/koneksi.php";
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-    header("Location: form_mahasiswa.php");
+    header("Location: ../pages/form_mahasiswa.php");
     exit;
 }
 
@@ -40,7 +40,7 @@ $stmt->execute();
 $stmt->close();
 $conn->close();
 
-header("Location: data_mahasiswa.php?status=sukses");
+header("Location: ../pages/data_mahasiswa.php?status=sukses");
 exit;
 
 ?>

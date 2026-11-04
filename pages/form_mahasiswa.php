@@ -1,5 +1,5 @@
 <?php
-require_once "auth.php";
+require_once "../config/auth.php";
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -7,7 +7,7 @@ require_once "auth.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Mahasiswa</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
@@ -22,6 +22,7 @@ require_once "auth.php";
     <a href="layout.php">Layout Lab</a>
     <a href="data_mahasiswa.php">Data Mahasiswa</a>
     <a href="form_mahasiswa.php">Tambah Mahasiswa</a>
+    <a href="../crud/index.php">CRUD Mahasiswa</a>
     <a href="logout.php">Logout</a>
 </nav>
 
@@ -29,7 +30,7 @@ require_once "auth.php";
     <section>
         <h2>Form Data Mahasiswa</h2>
 
-        <form action="proses_tambah.php" method="POST" class="student-form">
+        <form action="../proses/proses_tambah.php" method="POST" class="student-form">
             <label for="nim">NIM</label>
             <input id="nim" name="nim" type="text" required>
 
