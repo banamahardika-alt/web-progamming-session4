@@ -278,14 +278,41 @@ th {
  width: min(100%, 360px);
  padding: 10px 12px;
 }
+.data-table td.actions {
+ vertical-align: middle;
+}
 .actions {
  display: flex;
+ flex-wrap: wrap;
  gap: 8px;
  align-items: center;
 }
+.actions a {
+ color: #2563eb;
+ text-decoration: none;
+ font-weight: 500;
+ line-height: 1.4;
+}
+.actions a:hover {
+ text-decoration: underline;
+}
 .delete-form {
- display: inline;
+ display: inline-flex;
  margin: 0;
+}
+.btn-delete {
+ display: inline-block;
+ background-color: #fee2e2;
+ color: #b91c1c;
+ border: 1px solid #fca5a5;
+ padding: 6px 12px;
+ border-radius: 4px;
+ font-size: 0.9rem;
+ line-height: 1.4;
+ cursor: pointer;
+}
+.btn-delete:hover {
+ background-color: #fecaca;
 }
 .crud-form {
  width: 100%;
